@@ -1,0 +1,107 @@
++password : #1password} >>fail
++password :    $1 >>pass
++password: "${SecretVar1}", user: "#{username}", url: https://woopwoopnotarealsite.com/10min >>pass
++password: #{SecretVar1}, user: #{username}, url: https://woopwoopnotarealsite.com/10min >>pass
++password = "${SecretVar1}", user = "#{username}", url = https://woopwoopnotarealsite.com/10min >>pass
++password = #{SecretVar1}, user = #{username}, url = https://woopwoopnotarealsite.com/10min >>pass
++password: #{$ecretV@lu3, user: #{username}, url: https://woopwoopnotarealsite.com/10min >>fail
++password: ${$ecretV@lu3, user: #{username}, url: https://woopwoopnotarealsite.com/10min >>fail
++password: {$ecretV@lu3, user: #{username}, url: https://woopwoopnotarealsite.com/10min >>fail
++password: #{$ecretV@lu3, user: #{username}, url: https://woopwoopnotarealsite.com/10min >>fail
++password = {$ecretV@lu3, user: #{username}, url: https://woopwoopnotarealsite.com/10min >>fail
++password = ${$ecretV@lu3, user: #{username}, url: https://woopwoopnotarealsite.com/10min >>fail
++password: "#{$ecretV@lu3", user: "#{username}", url: https://woopwoopnotarealsite.com/10min >>fail
++password: "${$ecretV@lu3", user: "#{username}", url: https://woopwoopnotarealsite.com/10min >>fail
++password: "{$ecretV@lu3", user: "#{username}", url: https://woopwoopnotarealsite.com/10min >>fail
++password: "#{$ecretV@lu3", user: "#{username}", url: https://woopwoopnotarealsite.com/10min >>fail
++password = "{$ecretV@lu3", user = "#{username}", url = https://woopwoopnotarealsite.com/10min >>fail
++password = "${$ecretV@lu3", user = "#{username}", url = https://woopwoopnotarealsite.com/10min >>fail
++<Password value='{eor4duder1!' data='{user_var}' /> >>fail
++<Password value='{variable1}' data='{user_var}' /> >>pass
++<Password value='${eor4duder1!' data='{user_var}' /> >>fail
++<Password value='${variable1}' data='{user_var}' /> >>pass
++<Password value='#{eor4duder1!' data='{user_var}' /> >>fail
++<Password value='#{variable1}' data='{user_var}' /> >>pass
++password: String "${test_value", user: String "${variable}", location: String "Botswana", address: String "123 Not Real Ave.",>>fail
++password: String "#{test_value", user: String "#{variable}", location: String "Botswana", address: String "123 Not Real Ave.",>>fail
++password: String "{{test_value", user: String "{{variable}}", location: String "Botswana", address: String "123 Not Real Ave.",>>fail
++<Password primary="${pass_val1" /><User value="${variable}" /><Location value="1234 Johnny Ave."  >>fail
++<Secret primary="#{pass_val1" /><User value="#{variable}" /><Location value="1234 Johnny Ave."  >>fail
++<Password primary="${pass_var}" /><User value="${variable}" /><Location value="1234 Johnny Ave."  >>pass
++<Secret primary="#{pass_var}" /><User value="#{variable}" /><Location value="1234 Johnny Ave."  >>pass
++ password = usr/bin/local/pwd >>pass
++ password = p@ssword >>fail
++ password = password >>pass
++ password = USER_CLIENT_PASSWORD >>pass
++ password = passw0rd >>fail
++ password = 1password >>fail
++ password = $password >>pass
++ password = ${password} >>pass
++ password = $password1 >>fail
++ password = "usr/bin/local/pwd" >>pass
++ password = "p@ssword" >>fail
++ password = "password" >>pass
++ password = "USER_CLIENT_PASSWORD" >>pass
++ password = "passw0rd" >>fail
++ password = "1password" >>fail
++ password = "$password" >>pass
++ password = "${password}" >>pass
++ password = "$password1" >>fail
++ secret_key value="yolo123" >>fail
++ secret_key value="secretKeyVariable" >>pass
++ secret_key value="SECRET_KEY_VARIABLE" >>pass
++ secret_key value="$VARIABLE" >>pass
++ secret_key value="$uperStrong1" >>fail
++ secret_key value="usr/bin/local/key" >>pass
++ secret_key value="${SECRET_KEY}" >>pass
++ pwd primary="yolo123" >>fail
++ pwd primary="secretKeyVariable" >>pass
++ pwd primary="SECRET_KEY_VARIABLE" >>pass
++ pwd primary="$VARIABLE" >>pass
++ pwd primary="$uperStrong1" >>fail
++ pwd primary="usr/bin/local/key" >>pass
++ pwd primary="${SECRET_KEY}" >>pass
++ setPassword("yolo123"); >>fail
++ setPassword("secretPassVariable"); >>pass
++ setPassword("SECRET_PWD_VARIABLE"); >>pass
++ setPassword("$VARIABLE"); >>pass
++ setPassword("$uperStrong1"); >>fail
++ setPassword("usr/bin/local/pwd"); >>pass
++ setPassword("${SECRET_PWD}"); >>pass
++ secret: String "yolo123" >>fail
++ secret: String "secretKeyVariable" >>pass
++ secret: String "SECRET_KEY_VARIABLE" >>pass
++ secret: String "$VARIABLE" >>pass
++ secret: String "$uperStrong1" >>fail
++ secret: String "usr/bin/local/key" >>pass
++ secret: String "${SECRET_KEY}" >>pass
++ password:1password >>fail
++ api_key="${api_key}" >>pass
++ api_key="api_key_variable" >>pass
++ api_key="apiKeyVariable" >>pass
++ accessKey = "access_key" >>pass
++ secret-key: "secretKeyVariable" >>pass
++ api_key="$api_key_variable" >>pass
++ api_key="$apiKeyVariable" >>pass
++ accessKey = "$access_key" >>pass
++ secret-key: "$secretKeyVariable" >>pass
++ api_key="${api_key_variable}" >>pass
++ api_key="${apiKeyVariable}" >>pass
++ accessKey = "${access_key}" >>pass
++ secret-key: "${secretKeyVariable}" >>pass
++ api_key="#{api_key_variable}" >>pass
++ api_key="#{apiKeyVariable}" >>pass
++ accessKey = "#{access_key}" >>pass
++ secret-key: "#{secretKeyVariable}" >>pass
++ applicationKey:"my_app_key" >>pass
++AppKey = "AppKeyVariable" >>pass
++ apiKey: "/usr/bin/local/apikey" >>pass
++<property name="MANAGE_PREF_SECRET_KEY" value="ManagePreferenceKey" /> >>pass
++function(y){return var le={accesskey:"accessKey",allowfullscreen:"allowFullScreen",allowtransparency:"allowTransparency", >>pass
++<add key="AppSecretId" value="c75e7b5c-994d-2bee-7c98-c8c9f4688ee4" /> >>fail
++ applicationKey:"m1bsdgfjllcd" >>fail
++ api_key="abc1def2ghi3jkl4_5769rrg" >>fail
++ secret-key: "p@ndasAreCute" >>fail
++ secret-key = "pandasAre$oCute" >>fail
++ secret-key = 'pandasAreCut3' >>fail
++AppKey = "App2-k3569_ryfjd7" >>fail
