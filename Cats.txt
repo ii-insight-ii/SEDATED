@@ -1,0 +1,150 @@
++https://AKIAI44QH8DHBEXAMPLE/this.com>>pass
++AEmAATYAJMgAkIAs762q0QZ1xMgAkwASbABJgAE2ACTIAJ9B8BFuL>>pass
++      "password": password || null        >>pass
++            password         : password  >>pass
++    internal func logIn(email: String, password: String) {>>pass
++            logIn(email: email, password: password)>>pass
++                        self?.logIn(email: email, password: password)>>pass
++Have you heard of the passwd application that was being started by froderick?>>pass
++PSWRD="${env.PSWRD}";>>pass
++if [[ `echo "$KEY" | grep -E "${delimited_reArray[@]}"` ]]; then>>pass
++PSWRD=${pswrd}>>pass
++pswrd=credentials.getPswrd();>>pass
++Have you heard of the pswrd application that was being started by froderick?>>pass
++PASS="${env.PASS}";>>pass
++PASS=${pass}>>pass
++pass=credentials.getPass();>>pass
++Have you heard of the pass application that was being started by froderick?>>pass
++BEGIN RSA PRIVATE KEY>>pass
++BEGIN OPENSSH PRIVATE KEY>>pass
++BEGIN DSA PRIVATE KEY>>pass
++BEGIN EC PRIVATE KEY>>pass
++BEGIN PGP PRIVATE KEY BLOCK>>pass
++----BEGIN RSA PRIVATE KEY----->>pass
++------BEGIN OPENSSH PRIVATE KEY----->>fail
++   -----BEGIN DSA PRIVATE KEY----->>fail
++------BEGIN EC PRIVATE KEY----->>fail
++-----BEGIN PGP PRIVATE KEY BLOCK---->>pass
++-----beGIN RsA PRIvate KEy----->>pass
++------begin OPenSSH priVATE KeY----->>pass
++   -----bEgIn DsA pRiVaTe kEY----->>pass
++------beGIN ec PRivaTE keY----->>pass
++-----BeGiN PGP PRiVaTe KeY BLoCK----->>pass
++Client Secret == 'VIviyomam13lC-1335532dd23g'>>fail
++SECRET="38FJF84-FJFU785-KDHR74-DJDUE">>fail
++app-secret=anothersecRet4ME>>fail
++"client_secret":"sd0Lhjhjk-kPnhyt_fred7wq">>fail
++PSWRD = "anothersecRet4ME!";>>fail
++APP_KEY = abc123E3456abc>>fail
++SECRET-KEY=USERSECRET4thViolation>>fail
++password: 1abc2EF^&$>>fail
++password: admin>>pass
+MY_APP_PASSWORD: ${MY_APP_PASSWORD}>>pass
++String MY_CLIENT_SECRET = "12lkvjkkd-jfu34jsdsjeie56jfd-mcjsd7j8";>>fail
++String CLIENT_SECRET = "this-Is-My-cl1en7-5ecret";  APP_USER = "johnDoe";>>fail
++String CLIENT_SECRET = 'this-Is-My-cl1en7-5ecret'  APP_USER = 'johnDoe'>>fail
++int five = 5 String CLIENT_SECRET = 'this-Is-My-cl1en7-5ecret'  APP_USER = 'johnDoe'>>fail
++sh "set -e | curl -i -H 'X-Api-Key: 12345abcdefghijklmno' -T BackEnd/build/libs/example_api-0.1.0.jar>>fail
++password = "thisReallyI5M1P@$$w0rd-HaHa!";>>fail
++username = "johnDoe"; password = "thisReallyI5M1P@$$w0rd-HaHa!"; user_id = 32;>>fail
++This is only an example password - password: "notReallyMyP@ssword1!">>fail
++SECRET_KEY: "this-Is-My-cl1en7-5ecret";>>fail
++SecretKey=thisismysecret123key>>fail
++SECRETKEY     = thisismysecret123key>>fail
++int five = 5; String API_KEY = 'this-Is-My-cl1en7-5ecret';  APP_USER = 'johnDoe';>>fail
++API_KEY: "this-Is-My-cl1en7-api-Key";>>fail
++APIKey=thisismysecret123apikey>>fail
++api_key     = thisismysecret123APIkey>>fail
++int five = 5; String SENSITIVE_KEY = 'this-Is-My-cl1en7-5ecret';  APP_USER = 'johnDoe';>>fail
++SENSITIVE_KEY: "this-Is-My-cl1en7-SENSITIVE-Key";>>fail
++SENSITIVEKey=thisismysecret123SENSITIVEkey>>fail
++sensitive_key     = thisismysecret123sensitivekey>>fail
++int five = 5; String PRIVATE_KEY = 'this-Is-My-cl1en7-5ecret';  APP_USER = 'johnDoe';>>fail
++PRIVATE_KEY: "this-Is-My-cl1en7-Private-Key";>>fail
++PrivateKey=thisismysecret123Privatekey>>fail
++private_key     = thisismysecret123privatekey>>fail
++int five = 5; String ACCESS_KEY = 'this-Is-My-access7-Key5ecret';  APP_USER = 'johnDoe';>>fail
++ACCESS_KEY: "this-Is-My-cl1en7-Access-Key";>>fail
++AccessKey=thisismysecret123Accesskey>>fail
++access_key     = thisismysecret123accesskey>>fail
++int five = 5; String APPLICATION_KEY = 'this-Is-My-application7-Key5ecret';  APP_USER = 'johnDoe';>>fail
++APPLICATION_KEY: "this-Is-My-cl1en7-Application-Key";>>fail
++ApplicationKey=thisismysecret123Applicationkey>>fail
++application_key     = thisismysecret123applicationkey>>fail
++int five = 5; String APP_KEY = 'this-Is-My-app7-Key5ecret';  APP_USER = 'johnDoe';>>fail
++APP_KEY: "this-Is-My-cl1en7-App-Key";>>fail
++AppKey=thisismysecret123Appkey>>fail
++app_key     = thisismysecret123appkey>>fail
++AWS_KEY = 'ZW5jb2RlZCBzdHJpbmcgaGVyZSBub3cgZHVkZS4=' >>fail
++private static final String AWS_KEY = "ZW5jb2RlZCBzdHJpbmcgaGVyZSBub3cgZHVkZS4=";>>fail
++AWS_SECRET_ACCESS_KEY = 'ZW5jb2RlZCBzdHJpbmcgaGVyZSBub3cgZHVkZS4=' >>fail
++private static final String AWS_SECRET_ACCESS_KEY = "ZW5jb2RlZCBzdHJpbmcgaGVyZSBub3cgZHVkZS4=";>>fail
++This is our aws key AKIA12ABCD34EFGH56IJK well actually that is just a test aws key.>>pass
++SECRET    := variable_name_for_golang>>pass
++Secret    = thisismysecret123appkey>>fail
++SECRET    =    thisismysecret123appkey>>fail
++SECRET := variable_name_for_golang>>pass
++SECRET = thisismysecret123appkey>>fail
++secret:    thisismysecret123appkey>>fail
++SECRET:=variable_name_for_golang>>pass
++my_secret=thisismysecret123appkey>>fail
++SECRET:thisismysecret123appkey >>fail
++PASSWORD    - thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++PASSWORD - thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++Password    := thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++Password    = thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++password    =    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PASSWORD := thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++PassWord = thisIsMyP@$$w0rd1-Ha-Ha! >>fail
++PASSWORD:    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++Passwd:    thisIsMyP@$$w0rd1-Ha-Ha!, extrastuff-bobbytablesjunior: valueson,>>fail
++PASSWORD:=thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++PASSWORD=thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PASSWORD:thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PASSWORD    - "thisIsMyP@$$w0rd1-Ha-Ha!";>>pass
++PASSWORD    -     "thisIsMyP@$$w0rd1-Ha-Ha!";>>pass
++PASSWORD    := "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWORD    = "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++password    =     "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWORD := "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWORD = "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++Password:    "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWORD:="thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWORD="thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWORD:"thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWORD    - 'thisIsMyP@$$w0rd1-Ha-Ha?'>>pass
++PASSWORD    -    'thisIsMyP@$$w0rd1-Ha-Ha!'>>pass
++PASSWORD    := 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWORD    = 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWORD    =    'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWORD := 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWORD = 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWORD:    'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWORD:='thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWORD='thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWORD:'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++"password": "$MyPa$$w0rdz123">>fail
++"Password":"$MyPa$$w0rdz123">>fail
++password = $password >>pass
++password: password>>pass
++password: password1 >>fail
++password: pa$$word1 >>fail
++password: pa$$w1, >>fail
++pass: pass1>>pass
++password: $my_password >>pass
++password          : password1 >>fail
++pwd     : this1thingi$it>>fail
++pass   :       tabbedpassword@here123 >>fail
++passwd:            1thisIsmyp@wd! >>fail
++username: bobbytables, password: password1, userID: 1234, header_randomness: sdlkjfiuewfbewiefewuifsufwkfsnckhjdskfhsdkufhsdfjk, >>fail
++username:bobbytables,password:password1,userID:1234,header_randomness:sdlkjfiuewfbewiefewuifsufwkfsnckhjdskfhsdkufhsdfjk,>>fail
++username:bobbytables,password:1passw0rdfromme,userID:1234,header_randomness:sdlkjfiuewfbewiefewuifsufwkfsnckhjdskfhsdkufhsdfjk,>>fail
++username:bobbytables;password:1passw0rdfromme;userID:1234;header_randomness:sdlkjfiuewfbewiefewuifsufwkfsnckhjdskfhsdkufhsdfjk;>>fail
++password  : my_app_password>>pass
++password: reallylongpassword9thatshould1notbe4flaggedtothisonething>>pass
++password: password1>>fail
++password: "$imeonsPa$$w0rdz123">>fail
++password=password>>pass
++Password = "$345lsd6789" >>fail
++env_password = $password>>pass
++USER = "user"; PASSWORD = "thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
