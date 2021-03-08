@@ -1,0 +1,200 @@
++<Password></Password> >>pass
++ <Password value="{pass_var}" /> >>pass
++  <Password></Password> >>pass
++<Password></Password><Password value="${muffins}" /> >>pass
++<Pwd>fancyp@$$worD123!</Pwd> >>fail
++<Pwd>ZmFuY3lwQCQkd29yRDEyMyE</Pwd> >>fail
++<Pwd>fancy password</Pwd> >>fail
++ <Pwd>fancypass</Pwd> >>fail
++  <Pwd>i<3unicorns!</Pwd> >>fail
++  <Pwd>aTwzdW5pY29ybnMh</Pwd> >>fail
++  <Pwd>s-]?ookrd34433fjkLLKI*</Pwd> >>fail
++<Pwd><>s-]?ookrd3><4433fjkLLKI*<</Pwd> >>fail
++<Pwd value="{pass_val}" /> >>pass
++<Pwd></Pwd> >>pass
++ <Pwd value="{pass_var}" /> >>pass
++ <Pwd value="i<3unicorns!" /> >>fail
++ <Pwd value='i<3unicorns!' /> >>fail
++  <Pwd></Pwd> >>pass
++<Pwd></Pwd><Pwd value="${muffins}" /> >>pass
++<Pswd value="i<3unicorns!" /> >>fail
++<Passwd value="i<3unicorns!" /> >>fail
++<PassVar value="i<3unicorns!" /> >>fail
++<Pass value="i<3unicorns!" /> >>fail
++<Pswrd value="i<3unicorns!" /> >>fail
++<Pwrd value="i<3unicorns!" /> >>fail
++<Pswd>fancypass</Pswd> >>fail
++<Passwd>fancypass</Passwd> >>fail
++<Pwrd>fancypass</Pwrd> >>fail
++<Pswrd>fancypass</Pswrd> >>fail
++<Pass>fancypass</Pass> >>fail
++<Variable> >>pass
++  <Name>|*|AppAppDatabaseConnectionString|*|</Name> >>pass
++  <Description>AppAppDatabaseConnectionString</Description> >>pass
++  <Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password=Pa$$w0rd1</Value> >>fail
++    <Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password=Paa&lt;$/$w0rd1</Value> >>fail
++  <TemplateDerivable>False</TemplateDerivable> >>pass
++  <EnvironmentName>Localhost</EnvironmentName> >>pass
++</Variable> >>pass
++<Password> >>pass
++</Password> >>pass
++<Passenger>bobbydroptables</Passenger> >>pass
++<Overpass>the bridge is out!!</Overpass> >>pass
++<User><Password></Password></User> >>pass
++<User><Username>Bobby</Username><Password/></User> >>pass
++Application/Connections/MessagingService/JMS/Illustrations/JMS_Password=#!Ab7HdJVaZhu6COOOGHsfew==>>fail
++Application/Connections/MessagingService/JMS/Illustrations/JMS_Password=#!Ab9HdJDaKhu6COOODCotnr== >>fail
++Application/Connections/MessagingService/JMS/Illustrations/JMS_Password=#!AbxHdJDaKhuxCOOODCotnr== >>fail
++Application/Connections/MessagingService/JMS/Illustrations/JMS_Password=#{variable_name}>>pass
++Application/Connections/MessagingService/JMS/Illustrations/JMS_Password=#{variable_name} >>pass
++AFDQCommonServices/Connections/MessagingService/JMS/Application_AFDQ/JMS_Password=#!Cd3HdJDaAhu6COOOXZabcde==>>fail
++AFDQCommonServices/Connections/MessagingService/JMS/Application_AFDQ/JMS_Password=#!Cd2HdJDaZhu6COOOXZfghij== >>fail
++<user><Password>i<3unicorns!</Password></user> >>fail
++<account><Password>i<3unicorns!</Password></account> >>fail
++  <Account><Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password=Pa$$w0rd1</Value></Account><Overpass>thebridgeisout!!</Overpass><Overpass>thebridgeisout!!</Overpass> >>fail
++  <Account><Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password=Pa$$w0rd1<Value><Account><Overpass>thebridgeisout!!<Overpass><Overpass>thebridgeisout!!<Overpass> >>pass
++   secret="${SECRET}" >>pass
++secret="${SECRET}">>pass
++my_secret="${MY_APP_SECRET}" >>pass
++my_secret="${MY_APP_SECRET}">>pass
++my_secret = "$MY_APP_SECRET" >>pass
++my_secret =      "$MY_APP_SECRET">>pass
++my_secret = "$MY_APP_SECRET";>>pass
++my_other_secret: "$MY_APP_SECRET" >>pass
++my_other_secret      : "$MY_APP_SECRET">>pass
++my_secret: "${MY_APP_SECRET}" >>pass
++my_secret: "${MY_APP_SECRET}">>pass
++   secret=${SECRET} >>pass
++secret=${SECRET}>>pass
++   my_secret=${MY_APP_SECRET} >>pass
++my_secret=${MY_APP_SECRET}>>pass
++my_secret = $MY_APP_SECRET >>pass
++my_secret = $MY_APP_SECRET>>pass
++my_secret = $MY_APP_SECRET;>>pass
++ my_other_secret: $MY_APP_SECRET >>pass
++my_other_secret: $MY_APP_SECRET>>pass
++my_secret       : ${MY_APP_SECRET} >>pass
++my_secret:        ${MY_APP_SECRET}>>pass
++   secret='${SECRET}' >>pass
++secret='${SECRET}'>>pass
++   my_secret='${MY_APP_SECRET}' >>pass
++my_secret='${MY_APP_SECRET}'>>pass
++my_secret    =   '$MY_APP_SECRET' >>pass
++my_secret = '$MY_APP_SECRET'>>pass
++my_secret = '$MY_APP_SECRET;'>>pass
++ my_other_secret: '$MY_APP_SECRET' >>pass
++my_other_secret: '$MY_APP_SECRET'>>pass
++my_secret: '${MY_APP_SECRET}' >>pass
++my_secret: '${MY_APP_SECRET}'>>pass
++temp-secret = 'secret_value';>>pass
++secret="thisismysecret123appkey">>fail
++userid:0001,secret:thisismysecret123getit,username:bobbytables>>fail
++password = $passwordspaceafter >>pass
++password = $passwordlineend>>pass
++passwd = mynEw20rdd$! >>fail
++ pwd = $uperstrong1 >>fail
++ pwd = $uperstrong1>>fail
++ pswd = "$password_variable";>>pass
++passwd="$password_variable" >>pass
++ pswd = '$password_variable';>>pass
++passwd='$password_variable' >>pass
++ pswd = "${password_variable}";>>pass
++passwd="${password_variable}" >>pass
++PassWord="$uperStrong1!">>fail
++pswrd = "$uperStrong1!" >>fail
++PassWord="Super$trong1!">>fail
++pswrd="Super$trong1!" >>fail
++user=minion,password=get$om3!,selection=ALL,>>fail
++user=minion,password=$password,selection=ALL,>>pass
++user=minion,password=$passw0rd,selection=ALL,>>fail
++password = userpas$ >>fail
++password = userpas$>>fail
++pswd = m$ecret >>fail
++pswd = m$ecret>>fail
++pswd = $password >>pass
++pswd = $password>>pass
++password=userpas$ >>fail
++password=userpas$>>fail
++pswd=m$ecret >>fail
++pswd=m$ecret>>fail
++pswd=$password >>pass
++pswd=$password>>pass
++ passwd="r}brurhgr!">>fail
++passwd="r{blurg133!old" >>fail
++passwd="r{blurg$133!old" >>fail
++spring.datasource.password=${SQL_SERVER_PS}>>pass
++spring.datasource.password=${SQL_SERVER_PS} >>pass
++spring.datasource.password=$unic0Rn<3{er>>fail
++spring.datasource.password=$unic0Rn<3{e}r>>fail
++spring.datasource.password="$unic0Rn<3{er">>fail
++spring.datasource.password="$unic0Rn<3{e}r">>fail
++spring.datasource.password='$unic0Rn<3{er'>>fail
++spring.datasource.password='$unic0Rn<3{e}r'>>fail
++ password={variable} >>pass
++ password={variable>>fail
++ password = @yourHouse >>fail
++ password = 1@boomS0n >>fail
++ password={variable_pwd}>>pass
++ password={gotcha!1dude>>fail
++ password={gotcha!1dude >>fail
++ password=#{gotcha!1dude>>fail
++ password=#gotchadude} >>fail
++password="{pas$word1" >>fail
++password="{pas$word1">>fail
++password='{pas$word1' >>fail
++password='{pas$word1'>>fail
++passwd = "{catch_var}"; >>pass
++passwd = "{catch_var}";>>pass
++<password>%%JDBCPassword/UBIT/UBIT_DIA_EDIT_Password%%</password> >>pass
++<password>%%JDBCPassword/UBIT/UBIT_DIA_EDIT_Password%</password> >>fail
++<password>JDBCPasswor%d/UBIT%/UBIT_DIA_EDIT_Password%%</password> >>fail
++<password>%%HIBBY_JIBBY_Password%%</password> >>pass
++passwd = "${variable}"; >>pass
++ password = >>pass
++ passwd = >>pass
++ pwd= >>pass
++ pass= >>pass
++ password =>>pass
++ passwd =>>pass
++ pwd=>>pass
++ pass=>>pass
++ pswd: >>pass
++ password  :     >>pass
++password:>>pass
++  <password>${passwd}</password> >>pass
++  <password>${pwd}</password> >>pass
++  <password>#{password}</password> >>pass
++  <password>#{pwd}</password> >>pass
++  <password>${pukswtt!</password> >>fail
++  <password>$uperwd}</password> >>fail
++  <password>x{password}</password> >>fail
++  <password>#pwd123</password> >>fail
++Dim password = $"{password}" >>pass
++Application/Connections/Database/ARRXY/password =           >>pass
++Application/Connections/Database/ARRXY/password=           >>pass
++Application/Connections/Database/ARRXY/password   =           >>pass
++Application/Connections/Database/ARRXY/password =      >>pass
++Application/Connections/Database/ARRXY/password =>>pass
++Application/Connections/Database/ARRXY/password=>>pass
++Application/Connections/Database/ARRXY/password =      , username = bobby,>>pass
++Application/Connections/Database/ARRXY/password=      , username = bobby,>>pass
++Application/Connections/Database/ARRXY/password =      ; username = bobby;>>pass
++Application/Connections/Database/ARRXY/password=      ; username = bobby;>>pass
++Application/Connections/Database/ARRXY/password=      \ >>pass
++Application/Connections/Database/ARRXY/password=      // >>pass
++Application/Connections/Database/ARRXY/password=      # >>pass
++Application/Connections/Database/ARRXY/password =      \ >>pass
++Application/Connections/Database/ARRXY/password =      // >>pass
++Application/Connections/Database/ARRXY/password =      # >>pass
++    <!--<identity impersonate="true" userName="ad\bobby" password="#{Replace_Value}" />--> >>pass
++    <!--<identity impersonate="true" userName="ad\bobby" password="me&up@$#" />--> >>fail
++   <password>%%OnlineEndorsement/Constants/ICSIdentityUsername%%</password> >>pass
++        <password>%%OnlineEndorsement/Constants/ICS/IdentityPassword%%</password> >>pass
++Command32="Server=EasyBezy-t,1433;User=EasyBezy;PWD=#{Replace_Value};Initial Catalog=EasyBezy;Persist Security Info=True;MultipleActiveResultSets=True;USENT=Y;">>pass
++VersionComments="Data Source=awsbman-t,1433;Initial Catalog=Bman; Application Name=EasyOnline; User ID=BmanUsr;Password=^zoner!;" >>fail
++    <add key="ConnectionString_NewBusinessMT" value="Server=awsbman-t,1433;Database=NewBusinessMT;User ID=MiddleTier;Password=#{Replace_Value}" /> >>pass
++    <add key="ConnectionString_B2B" value="Server=awsbman-t,1433;Database=B2B;User ID=b2buser;Password=#{Replace_Value};Trusted_Connection=False" /> >>pass
++    <add key="ConnectionString_B2B" value="Server=awsbman-t,1433;Database=B2B;User ID=b2buser;Password=#gets0m3;Trusted_Connection=False" /> >>fail
++ password=#{password} >>pass
++ password=#{password >>fail
++ pwd = #abc123! >>fail
