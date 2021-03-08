@@ -1,0 +1,75 @@
++pwd: $GIT_PASSWORD, user = papageorgio, url = https://woopwoopnotarealsite.com/10min >>pass
++passwd: ${GIT_PASSWORD}, user = papageorgio, url = https://woopwoopnotarealsite.com/10min >>pass
++password: #{GIT_PASSWORD}, user = #{username}, url = https://woopwoopnotarealsite.com/10min >>pass
++password: #{$ecretV@lu3, user = #{username}, url = https://woopwoopnotarealsite.com/10min >>fail
++passwd: {{variable_injection}}, user = papageorgio, url = https://woopwoopnotarealsite.com/10min >>pass
++secret: {{variable_injection}}, user = papageorgio, url = https://woopwoopnotarealsite.com/10min >>pass
++<Account><Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password=${passvariable}</Value></Account><Overpass>thebridgeisout!!</Overpass><Overpass>thebridgeisout!!</Overpass> >>pass
++password = password1;lolz >>fail
++password = $password; >>pass
++password = ${password}; >>pass
++password = #{password}; >>pass
++pwd = pa$$word,kjl >>fail
++password = $password1 >>fail
++pswd = $uperStrong1! >>fail
++pwd = password; >>pass
++pwd = password>>pass
++password = password >>pass
++password = {password} >>pass
++password = $uperStrongPassword >>pass
++password = ${uperStrongPassword} >>pass
++password = Super$trongPassword >>fail
++password = password1 >>fail
++password = p@ssw0rd >>fail
++password = myPa$$word1 >>fail
++password = $uperStr0ngPassword >>fail
++password = $password_variable >>pass
++<Account><Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password="Pa$$w0rd1"</Value></Account></Overpass>thebridgeisout!!</Overpass><Overpass>thebridgeisout!!</Overpass> >>fail
++<Account><Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password="${passvariable}"</Value></Account><Overpass>thebridgeisout!!</Overpass><Overpass>thebridgeisout!!</Overpass> >>pass
++password = "password1";lolz >>fail
++password = "$password"; >>pass
++password = "${password}"; >>pass
++password = "#{password}"; >>pass
++pwd = "pa$$wordkjl" >>fail
++password = "$password1" >>fail
++pswd = "$uperStrong1!" >>fail
++pwd = "password"; >>pass
++pwd = "password" >>pass
++password = "password" >>pass
++password = "{password}" >>pass
++password = "$password_variable" >>pass
++password = "$password_variable_longer" >>pass
++password = "$password-variable" >>pass
++password = "${password_variable}" >>pass
++password = "$uperP@ssword" >>fail
++password = "$toppingi$h@rd" >>fail
++password = "$uperStrongPassword" >>pass
++password = "${uperStrongPassword}" >>pass
++password = "Super$trongPassword" >>fail
++password = "password1" >>fail
++password = "p@ssw0rd" >>fail
++password = "myPa$$word1" >>fail
++password = "$uperStr0ngPassword" >>fail
++passwd="{{variable_injection}}", user = papageorgio, url = https://woopwoopnotarealsite.com/10min >>pass
++temp-secret = secret_variable; >>pass
++  <Account><Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password="${password_variable}"</Value><Account><Overpass>thebridgeisout!!<Overpass><Overpass>thebridgeisout!!<Overpass> >>pass
++  <Account><Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password=${password_variable}</Value><Account><Overpass>thebridgeisout!!<Overpass><Overpass>thebridgeisout!!<Overpass> >>pass
++  <Account><Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password="$password_variable"</Value><Account><Overpass>thebridgeisout!!<Overpass><Overpass>thebridgeisout!!<Overpass> >>pass
++  <Account><Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password=$password_variable;</Value><Account><Overpass>thebridgeisout!!<Overpass><Overpass>thebridgeisout!!<Overpass> >>pass
++  <Account><Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password="${password_variable}";more=garbage;some=thing_else;</Value><Account><Overpass>thebridgeisout!!<Overpass><Overpass>thebridgeisout!!<Overpass> >>pass
++  <Account><Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password=${password_variable};more=garbage;some=thing_else;</Value><Account><Overpass>thebridgeisout!!<Overpass><Overpass>thebridgeisout!!<Overpass> >>pass
++  <Account><Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password="$password_variable";more=garbage;some=thing_else;</Value><Account><Overpass>thebridgeisout!!<Overpass><Overpass>thebridgeisout!!<Overpass> >>pass
++  <Account><Value>Data Source=ABDOO013;User Id=ABCDEFGHI1;Password=$password_variable;more=garbage;some=thing_else;</Value><Account><Overpass>thebridgeisout!!<Overpass><Overpass>thebridgeisout!!<Overpass> >>pass
++ password = 1password >>fail
++ password = "1password" >>fail
++password: 1password >>fail
++password: 1password >>fail
++password: password >>pass
++password: $uperStr0ng >>fail
++password :   1$password >>fail
++password : ${LA_PASSWORD} >>pass
++password : ${L7_PASSWORD} >>pass
++password : #{L7_PASSWORD} >>pass
++password : ${1password >>fail
++password : #{1password >>fail
++password : $1password} >>fail
