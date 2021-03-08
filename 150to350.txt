@@ -1,0 +1,200 @@
++USER = "user"; PASSWORD="thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = 'user' PASSWORD = 'thisIsMyP@$$w0rd1-Ha-Ha!' USER_ID = 'user_id'>>fail
++PASSWD    - thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++PASSWD - thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++PASSWD    := thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++PASSWD    = thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++Passwd    =    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PASSWD := thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++PASSWD = thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++passwd:    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PASSWD:=thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++passwd=thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PASSWD:thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++Passwd    - "thisIsMyP@$$w0rd1-Ha-Ha!";>>pass
++PASSWD - "thisIsMyP@$$w0rd1-Ha-Ha!";>>pass
++PASSWD    := "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWD    = "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWD    =     "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWD := "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++Passwd = "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWD:    "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWD:="thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWD="thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWD:"thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASSWD    - 'thisIsMyP@$$w0rd1-Ha-Ha!'>>pass
++PASSWD    -    'thisIsMyP@$$w0rd1-Ha-Ha!'>>pass
++PASSWD    := 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWD    = 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWD    =    'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWD := 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWD = 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWD:    'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWD:='thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWD='thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASSWD:'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++USER = "user"; PASSWD = "thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = "user"; passwd="thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = "user"; PASSWD="thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = 'user' Passwd = 'thisIsMyP@$$w0rd1-Ha-Ha!' USER_ID = 'user_id'>>fail
++pswrd    - thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++Pswrd - thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++PSWRD    := thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++PSWRD    = thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PSWRD    =    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PSWRD := thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++Pswrd = thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PSWRD:    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PSWRD:=thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pswrd=thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PSWRD:thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PSWRD    - "thisIsMyP@$$w0rd1-Ha-Ha!";>>pass
++PSWRD - "thisIsMyP@$$w0rd1-Ha-Ha!";>>pass
++PSWRD    := "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PSWRD    = "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pswrd    =    "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PSWRD := "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PSWRD = "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++Pswrd:    "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PSWRD:="thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PSWRD="thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PSWRD:"thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PSWRD    - 'thisIsMyP@$$w0rd1-Ha-Ha!'>>pass
++PSWRD - 'thisIsMyP@$$w0rd1-Ha-Ha!'>>pass
++PSWRD    := 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pswrd    = 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PSWRD    =    'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PSWRD := 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PSWRD = 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PSWRD:    'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PSWRD:='thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PSWRD='thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PSWRD:'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++USER = "user"; PSWRD = "thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = "user"; Pswrd="thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = "user"; pswrd="thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = 'user' PSWRD = 'thisIsMyP@$$w0rd1-Ha-Ha!' USER_ID = 'user_id'>>fail
++PSWD    - thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pswd - thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pswd    := thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++PSWD    = thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++Pswd    =    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pswd := thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pswd = thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pswd:    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pswd:=thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pswd=thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pswd:thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pswd    - "thisIsMyP@$$w0rd1-Ha-Ha!";>>pass
++pswd - "thisIsMyP@$$w0rd1-Ha-Ha!";>>pass
++pswd    := "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PSWD    = "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pswd    =    "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pswd := "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pswd = "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pswd:    "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pswd:="thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pswd="thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PSWD:"thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pswd    - 'thisIsMyP@$$w0rd1-Ha-Ha!'>>pass
++pswd - 'thisIsMyP@$$w0rd1-Ha-Ha!'>>pass
++pswd    := 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++Pswd    = 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pswd    =    'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pswd := 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PSWD = 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pswd:    'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pswd:='thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pswd='thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pswd:'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++USER = "user"; PSWD = "thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = "user"; Pswd="thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = "user"; pswd="thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = 'user' PSWD = 'thisIsMyP@$$w0rd1-Ha-Ha!' USER_ID = 'user_id'>>fail
++PWD    - thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pwd - thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pwd    := thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++PWD    = thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++Pwd    =    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pwd := thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pwd = thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pwd:    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pwd:=thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pwd=thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pwd:thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pwd    - "thisIsMyP@$$w0rd1-Ha-Ha!";>>pass
++pwd - "thisIsMyP@$$w0rd1-Ha-Ha!";>>pass
++pwd    := "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PWD    = "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pwd    =    "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pwd := "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pwd = "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pwd:    "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pwd:="thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pwd="thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PWD:"thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pwd    - 'thisIsMyP@$$w0rd1-Ha-Ha!'>>pass
++pwd - 'thisIsMyP@$$w0rd1-Ha-Ha!'>>pass
++pwd    := 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++Pwd    = 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pwd    =    'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pwd := 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PWD = 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pwd:    'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pwd:='thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pwd='thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pwd:'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++USER = "user"; PWD = "thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = "user"; Pwd="thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = "user"; pwd="thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = 'user' PWD = 'thisIsMyP@$$w0rd1-Ha-Ha!' USER_ID = 'user_id'>>fail
++PWRD    - thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pwrd - thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pwrd    := thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++PWRD    = thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++Pwrd    =    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pwrd := thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pwrd = thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pwrd:    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pwrd       :    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pwrd:=thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pwrd=thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pwrd:thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pwrd    - "thisIsMyP@$$w0rd1-Ha-Ha!";>>pass
++pwrd - "thisIsMyP@$$w0rd1-Ha-Ha!";>>pass
++pwrd    := "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PWRD    = "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pwrd    =    "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pwrd := "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pwrd = "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pwrd:    "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pwrd:="thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pwrd="thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PWRD:"thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pwrd    - 'thisIsMyP@$$w0rd1-Ha-Ha!'>>pass
++pwrd - 'thisIsMyP@$$w0rd1-Ha-Ha!'>>pass
++pwrd    := 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++Pwrd    = 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pwrd    =    'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pwrd := 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PWRD = 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pwrd:    'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pwrd:='thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pwrd='thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pwrd:'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++USER = "user"; PWRD = "thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = "user"; Pwrd="thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = "user"; pwrd="thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = 'user' PWRD = 'thisIsMyP@$$w0rd1-Ha-Ha!' USER_ID = 'user_id'>>fail
++Pass    - thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++PASS - thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pass    := thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++pass    = thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PASS    =    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PASS := thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++Pass = thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PASS:    thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++pass:=thisIsMyP@$$w0rd1-Ha-Ha!>>pass
++PASS=thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PASS:thisIsMyP@$$w0rd1-Ha-Ha!>>fail
++PASS    - "thisIsMyP@$$w0rd1-Ha-Ha!";>>pass
