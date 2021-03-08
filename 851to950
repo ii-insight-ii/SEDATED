@@ -1,0 +1,100 @@
++ password={variab1e >>fail
++password: String "$MyP@$$w0Rd">>fail
++pwd: String "${password_var}">>pass
++passwd: String "#{password_var}">>pass
++passwd: String "#{MyP@$$w0Rd">>fail
++pswd: String "#MyP@$$w0Rd}">>fail
++<Password value='{pass_val}' /> >>pass
++<Passwd value="#{pass_var}" /> >>pass
++<Pwd value="$password" /> >>pass
++<Passwd value="#i<3unicorns!" /> >>fail
++<Pswd value='#{pass_variable}' /> >>pass
++<Password value='$fancypass1' /> >>fail
++<Password value='#{i<3unicorns!' /> >>fail
++<Password value='#i<3unicorns!}' /> >>fail
++<Password value='${i<3unicorns!' /> >>fail
++token=`curl -X POST -H "X-Source-Namespace: engineering" -d '{ "password": "${GIT_PASSWORD}" }' ${sourceAPIUrl}/v1/auth/engineering/engineering/login/${GIT_USERNAME} | jq -r .auth.client_token` >>pass
++'{ "password": "${GIT_PASSWORD}" }' >>pass
++'{ "password": "${GIT_PASSWORD}" }' ${sourceAPIUrl}/v1/auth/vl >>pass
++'{ "password": "${GIT_PASSWORD}" }' sourceAPIUrl/v1/auth/vl >>pass
++'{ "password": "${GIT_PASSWORD}" }' ppsourceAPIUrpppv1pauthpvl >>pass
++'{ "password": "${GIT_PASSWORD}" }' sourceAPIUrl/vl/auth/vabasdfadfafasdfafd asdf asdfasdf asdf asf asfsdafds fsd fsdfasf asfasf as1 >>pass
++'{ "password": "${GIT_PASSWORD}" }' sourceAPIUrl/vl/auth/vabasdfadfafasdfafd asdf asdfasdf asdf asf asfsdafds fsd fsdfasf asfasf as >>pass
++'{ "password": "${GIT_PASSWORD}" }' sourceAPIUrl/vl/auth/vabasdfadfafasdfafd asdf asdfasdf asdf asf asfsdafds fsd fsdfasf asfasf as"1 >>pass
++'{ "password": "${GIT_PASSWORD}" }' ${sourceAPIUrl}/v/auth/vl >>pass
++{ "password": "${GIT_PASSWORD}" }' ${sourceAPIUrl}/v1/auth/sourceAPIUrl/engineering/login/${GIT_USERNAME} | jq -r .auth.client_token` >>pass
++                    token=`curl -X POST -H "X-Source-Namespace: engineer" -d '{ "password": "${GIT_PASSWORD}" }' ${sourceAPIUrl}/v1/auth/engineering/engineering/login/${GIT_USERNAME} | jq -r .auth.client_token`>>pass
++%ghd-d00-etl-platform ALL= NOPASSWD: /usr/bin/su - hd-d00-etl-platform >>pass
++%ghd-d00-etl-platform ALL= NOPASSWD: /usr/bin/su - hd-doo-etl-platform >>pass
++CAcreateserial -passin pass:$CAPASSWORD -sha256 >>pass
++CAcreateserial -passin pass:$CAPASSWORD -shaabc >>pass
++token=`curl -X POST -H "X-Source-Namespace: engineering" -d '{ "password": "${GIT_PASSWORD}" }' ${sourceAPIUrl}/v1/auth/src-engineer-a-prd/engineer/login/${GIT_USERNAME} | jq -r .auth.client_token` >>pass
++'{ "password": "${GIT_PASSWORD}" }' sourceAPIUrl >>pass
++'{ "password": "${GIT_PASSWORD}" }' ppsourceAPIUrlIUrlpp/vl/auth/vabasdfadfafasdfafd asdf asdfasdf asdf asf asfsdafds fsd fsdfasf asfasf as1 >>pass
++{ "password": "${GIT_PASSWORD}" }' ${sourceAPIUrl}/v1/auth/src-cloud-prd/engineering/login/${GIT_USERNAME} | jq -r .auth.client_token` >>pass
++"client_secret":"why_hello-thereNumber1ar" >>fail
++client_secret:why_hello-thereNumber1ar>>fail
++client_secret:why_hello-thereNumberlar>>pass
++"client_secret":why_hello-thereNumber1ar >>pass
++client_secret:"why_hello-thereNumber1ar" >>fail
++"Client_Secret":"why_hello-thereNumber1ar" >>fail
++authorization: basic QWxhZGRpbjpPcGVuU2VzYW1l >>pass
++my+_auth = blahblahblah >>pass
++my+_AUTH = blahblahblah >>pass
++_auth = blahblahblah >>fail
++_AUTH = blahblahblah >>fail
++CAcreateserial -passin pass=$CAPASSWORD -sha256 >>pass
++pass=$variable_here something-else-here, thenANumber=1 >>pass
++pwd_variable_value = variable, user_variable_value = "billyBob556", favFood = "ice cream",>>pass
++pwd_variable_value = $variable, user_variable_value = "billyBob556", favFood = "ice cream",>>pass
++pwd_variable_value="$variable", user_variable_value = "billyBob556", favFood = "ice cream",>>pass
++pwd_variable_value="${variable}", user_variable_value = "billyBob556", favFood = "ice cream",>>pass
++pwd_variable_value="#{variable}", user_variable_value = "billyBob556", favFood = "ice cream",>>pass
++pwd_variable_value="{{variable}}", user_variable_value = "billyBob556", favFood = "ice cream",>>pass
++pwd_variable_value="{cari1able", user_variable_value = "billyBob556", favFood = "ice cream",>>fail
++pwd_variable_value="$uper1able", user_variable_value = "billyBob556", favFood = "ice cream",>>fail
++pwd_variable_value="Super1$able", user_variable_value = "billyBob556", favFood = "ice cream",>>fail
++passwd = "{variable}"; >>pass
++passwd = "{variable}";>>pass
++ <Password value="{$pass_val}" /> >>pass
++<Passwd value="{pass_val}" /><User value="billyBob" /><Location value="1234 Johnny Ave." >>pass
++<Pswd value="{{pass_val}}" /><User value="billyBob" /><Location value="1234 Johnny Ave."  >>pass
++<Pwd value="${pass_val}" /><User value="billyBob" /><Location value="1234 Johnny Ave."  >>pass
++<Password value="#{pass_val}" /><User value="billyBob" /><Location value="1234 Johnny Ave."  >>pass
++<Passwd primary="{pass_val}" /><User value="billyBob" /><Location value="1234 Johnny Ave." >>pass
++<Pswd primary="{{pass_val}}" /><User value="billyBob" /><Location value="1234 Johnny Ave."  >>pass
++<Pwd primary="${pass_val}" /><User value="billyBob" /><Location value="1234 Johnny Ave."  >>pass
++<Password primary="#{pass_val}" /><User value="billyBob" /><Location value="1234 Johnny Ave."  >>pass
++<Secret primary="#{pass_val}" /><User value="billyBob" /><Location value="1234 Johnny Ave."  >>pass
++<secret primary="${pass_val}" /><User value="billyBob" /><Location value="1234 Johnny Ave."  >>pass
++<secret primary="hyugeV@lu3" /><User value="billyBob" /><Location value="1234 Johnny Ave." >>fail
++my_auth = blahblahblah >>pass
++my_AUTH = blahblahblah >>pass
++CAcreateserial -passin pass=$CAPASSWORD -shaabc >>pass
++password = ${GIT_PASSWORD}, user = ${GIT_USER}, url = https://woopwoopnotarealsite.com/10min >>pass
++password = $GIT_PASSWORD, user = papageorgio, url = https://woopwoopnotarealsite.com/10min >>pass
++password = "{{variable_injection}}", user = papageorgio, url = https://woopwoopnotarealsite.com/10min >>pass
++password = "{{gotmy-secrethere}}", user = papageorgio, url = https://woopwoopnotarealsite.com/10min >>pass
++passwd={{variable_injection}}, user = papageorgio, url = https://woopwoopnotarealsite.com/10min >>pass
++ntlmCredential.setPassword("$test_variable");location.setLocation("Origami Lane");visitationFrequency(12); >>pass
++ntlmCredential.setPassword("${test_variable}");location.setLocation("Origami Lane");visitationFrequency(12); >>pass
++ntlmCredential.setPassword("#{test_variable}");location.setLocation("Origami Lane");visitationFrequency(12); >>pass
++ntlmCredential.setPassword("{{test_variable}}");location.setLocation("Origami Lane");visitationFrequency(12); >>pass
++ntlmCredential.setPassword(test_variable);location.setLocation("Origami Lane");visitationFrequency(12); >>pass
++ntlmCredential.setPassword("$uper_secr3t!");location.setLocation("Origami Lane");visitationFrequency(12); >>fail
++ntlmCredential.setPassword("${trickyP@$$1");location.setLocation("Origami Lane");visitationFrequency(12); >>fail
++ntlmCredential.setPassword("#{trickyP@$$1");location.setLocation("Origami Lane");visitationFrequency(12); >>fail
++ntlmCredential.setPassword("{{secret_variable}}");location.setLocation("Origami Lane");visitationFrequency(12); >>pass
++password: String "$test_variable", user: String "scottie", location: String "Botswana", address: String "123 Not Real Ave.",>>pass
++password: String "${test_variable}", user: String "scottie", location: String "Botswana", address: String "123 Not Real Ave.",>>pass
++password: String "#{test_variable}", user: String "scottie", location: String "Botswana", address: String "123 Not Real Ave.",>>pass
++password: String "{{test_variable}}", user: String "scottie", location: String "Botswana", address: String "123 Not Real Ave.",>>pass
++password: String "$uper_secr3t!", user: String "scottie", location: String "Botswana", address: String "123 Not Real Ave.",>>fail
++password: String "${trickyP@$$1", user: String "scottie", location: String "Botswana", address: String "123 Not Real Ave.",>>fail
++password: String "#{trickyP@$$1", user: String "scottie", location: String "Botswana", address: String "123 Not Real Ave.",>>fail
++password: String "{{secret_variable}}", user: String "scottie", location: String "Botswana", address: String "123 Not Real Ave.",>>pass
++  <password>${re@lvalU3</password><location>${address}</location><visitation_code>7</visitiation_code> >>fail
++  <password>%%vale-ofmyP@$shere</password><location>%%address%%</location><visitation_code>7</visitiation_code> >>fail
++  <password>%%{re@lvalU3</password><visitation_code>7</visitiation_code><location>%%address%%</location> >>fail
++  <password>%%variable_here%%</password><visitation_code>7</visitiation_code><location>%%address%%</location> >>pass
++password: ${GIT_PASSWORD}, user = ${GIT_USER}, url = https://woopwoopnotarealsite.com/10min >>pass
