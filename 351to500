@@ -1,0 +1,150 @@
++Pass - "thisIsMyP@$$w0rd1-Ha-Ha!";>>pass
++pass    := "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASS    = "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASS    =    "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASS := "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++Pass = "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pass:    "thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASS:="thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASS="thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++PASS:"thisIsMyP@$$w0rd1-Ha-Ha!";>>fail
++pass    - 'thisIsMyP@$$w0rd1-Ha-Ha!'>>pass
++PASS - 'thisIsMyP@$$w0rd1-Ha-Ha!'>>pass
++PASS    := 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASS    = 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++Pass    =    'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASS := 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++pass = 'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASS:    'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASS:='thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASS='thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++PASS:'thisIsMyP@$$w0rd1-Ha-Ha!'>>fail
++USER = "user"; PASS = "thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = "user"; Pass="thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = "user"; pass="thisIsMyP@$$w0rd1-Ha-Ha!"; USER_ID = "user_id";>>fail
++USER = 'user' PASS = 'thisIsMyP@$$w0rd1-Ha-Ha!' USER_ID = 'user_id'>>fail
++xoxp-12345678901-123456789012-123456789012-dc82b1510a492cf2087dd72cdb9860fb>>fail
++XoXp-12345678901-123456789012-123456789012-dc82b1510a492cf2087dd72cdb9860fb>>pass
++"client_secret": "1bcdabcdabcdabcdabcdabcdabcdabcdabcdabcd",>>fail
++{"client_secret": "abcdabcdabcdabcdabcdabcdabcdabcdabcdabc1","scopes": ["public_repo"],"note": "admin script"}>>fail
++AWS_KEY = 'ASIA12ABCD34EFGH56IJ';>>fail
++AWS_KEY = "AKIA123456789EXAMPLE";>>fail
++		AWS_KEY: AKIA123456789EXAMPLE>>fail
++		AWS_KEY: AKIA123456789EXAMPLE >>fail
++MY_AWS_KEY = 'AKIAJSIE27KKMHXI3BJQ' >>fail
++AWS_KEY = "AKIA123456789EXAMPLE">>fail
++aws.key=AKIAI44QH8DHBEXAMPLE>>fail
++aws.key=AKIAI44QH8DHBEXAMPLE >>fail
++aws.key="AKIAI44QH8DHBEXAMPLE">>fail
++aws.key="AKIAI44QH8DHBEXAMPLE"    >>fail
++aws.key='AKIAI44QH8DHBEXAMPLE'>>fail
++aws.key='AKIAI44QH8DHBEXAMPLE' >>fail
++String mykey = "AKIAI44QH8DHBEXAMPLE">>fail
++  integrity: sha1-ZW5jb2RlZCBzdHJpbmcgaGVyZSBub3cgZHVkZS4=>>pass
++  "message": "ZW5jb2RlZCBzdHJpbmcgaGVyZSBub3cgZHVkZS4gc28gbGV0IG1lIHRlbGwgeW91IGFib3V0IHRoZSBzdG9yeSBvZiBtYW4gbmFtZWQgSmVkLCBwb29yIG1vdW50YWluZWVyIGJhcmVseSBrZXB0IGhpcyBmYW1pbHkgZmVkLg==",>>pass
++ABC152ASDFGFD2FGG6G8G45GB2FGDFS5GDS5B5S5GBDS4B56SGDFS2BV5DF5BFD2BFDS25>>pass
++GITHUB_TOKEN: 'a123456750204904539bcb8bd004dac09eb23077'>>fail
++GITHUB_TOKEN = "a123456750204904539bcb8bd004dac09eb23077";>>fail
++-----BEGIN RSA PRIVATE KEY----->>fail
++-----BEGIN OPENSSH PRIVATE KEY----->>fail
++-----BEGIN DSA PRIVATE KEY----->>fail
++-----BEGIN EC PRIVATE KEY----->>fail
++      -----BEGIN EC PRIVATE KEY-----       >>fail
++-----BEGIN PGP PRIVATE KEY BLOCK----->>fail
++funciton -----BEGIN PGP PRIVATE KEY BLOCK----- "{}+">>fail
++$-----BEGIN DSA PRIVATE KEY----- >>fail
++"-----BEGIN OPENSSH PRIVATE KEY-----">>fail
++TWITTER_TOKEN: "1234567890abcdefghij1234567890abcde";>>fail
++fe fi fo fum twitter_Oauth = "1234567890abcdefghij1234567890abcde123456789" that smells good and I want some>>fail
++TwitterAuth='1234567890abcdefghij1234567890abcde123456789' and then...>>fail
++FACEBOOK_TOKEN: "1234567890abcdefabcd1234567890abcde";>>fail
++fe fi fo fum facebook_Oauth = "1234567890abcdef1234567890abcde1234567890abcdef1234567890abcde1234567890abcdef1234567890abcde1234567890abcdef1234567890abcde" that smells good and I want some>>fail
++FaceBookAuth='1234567890abcdef1234567890abcde1234567890abcdef1234567890abcde123' and then...>>fail
++HEROKU_TOKEN: "01234567-89ab-cdef-0123-456789abcdef";>>fail
++heroku_Oauth = '01234567-89ab-cdef-0123-456789abcdef'>>fail
++HerokuAuth=01234567-89ab-cdef-0123-456789abcdef>>fail
++curl -X GET https://api.heroku.com/apps/01234567-89ab-cdef-0123-456789abcdef -H "Accept: application/vnd.heroku+json; version=3" -H "Authorization: Bearer $TUTORIAL_KEY">>fail
++GITHUB_TOKEN=${env.GITHUB_TOKEN}>>pass
++GITHUB_TOKEN="${env.GITHUB_TOKEN}";>>pass
++It has been proven that github accredation is not a real thing, however Antidisestablishmentarianism is a real word.>>pass
++TWITTER_TOKEN=${env.TWITTERTOKEN}>>pass
++final String TwitterToken = credentials.getTwitterToken();>>pass
++https://help.twitter.com/en/rules-and-policies#research-and-experiments>>pass
++In my twitter account I follow an Antidisestablishmentarianism account.>>pass
++FACEBOOK_TOKEN=${env.FACEBOOKTOKEN}>>pass
++final String FaceBookToken = credentials.getFaceBookToken();>>pass
++https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fads%2Fpreferences%2F%3Fentry_product%3Dad_settings_screen>>pass
++In my facebook account I created an Antidisestablishmentarianism page.>>pass
++HEROKU_TOKEN=${env.HEROKU_TOKEN}>>pass
++final String HerokuToken = credentials.getHerokuToken();>>pass
++curl -X GET https://api.heroku.com/apps/${HEROKU_TOKEN} -H "Accept: application/vnd.heroku+json; version=3" -H "Authorization: Bearer $TUTORIAL_KEY">>pass
++I am going to use the word heroku and Antidisestablishmentarianism in the same sentence to see if it flags.>>pass
++final String MY_CLIENT_SECRET = credentials.getAppSecret();>>pass
++SECRET=${envSECRET};>>pass
++Have you heard of the secret application>>pass
++Have you heard of the secret application that was being started by froderick?>>pass
++sh "set -e | curl -i -H 'X-Api-Key: ${ARTIFACTORY_KEY}' -T BackEnd/build/libs/example_api-0.1.0.jar'">>pass
++If you have an API Key application please be sure and ignore this.>>pass
++Your password credentials cannot be blank>>pass
++Have you heard of the secret key application that was being started by froderick?>>pass
++SECRET_KEY="${env.secret-key}";>>pass
++SECRET-KEY=${secretkey}>>pass
++secret-key=credentials.getSecretKey();>>pass
++API_KEY="${env.api-key}">>pass
++API KEY=${apikey}>>pass
++api-key=credentials.getAPIKey();>>pass
++Have you heard of the api key application that was being started by froderick?>>pass
++SENSITIVE_KEY="${env.SENSITIVE-key}";>>pass
++SENSITIVE KEY=${SENSITIVEkey}>>pass
++sensitive-key=credentials.getSensitiveKey();>>pass
++Have you heard of the sensitive key application that was being started by froderick?>>pass
++PRIVATE_KEY="${env.Private-key}";>>pass
++PRIVATE KEY=${privatekey}>>pass
++private-key=credentials.getPrivateKey();>>pass
++Have you heard of the private key application that was being started by froderick?>>pass
++ACCESS_KEY="${env.Access-Key}";>>pass
++ACCESS KEY=${accesskey}>>pass
++access-key=credentials.getAccessKey();>>pass
++Have you heard of the access key application that was being started by froderick?>>pass
++APPLICATION_KEY="${env.Application-Key}";>>pass
++APPLICATION KEY=${applicationkey}>>pass
++application-key=credentials.getApplicationKey();>>pass
++Have you heard of the application key application that was being started by froderick?>>pass
++APP_KEY="${env.App-Key}";>>pass
++APP KEY=${appkey}>>pass
++app-key=credentials.getAppKey();>>pass
++Have you heard of the app key application that was being started by froderick?>>pass
++PASSWORD="${env.Password}";>>pass
++PASSWORD=${password}>>pass
++password=credentials.getPassword();>>pass
++password=getPassword();>>pass
++password=getPassword()>>pass
++Have you heard of the password application that was being started by froderick?>>pass
++PASSWD="${env.Passwd}";>>pass
++PASSWD=${passwd}>>pass
++passwd=credentials.getPasswd();>>pass
++It is important to include the password-destroyer>>pass
++It is important to include the passwd-destroyer>>pass
++It is important to include the pass-destroyer>>pass
++It is important to include the pswd-destroyer>>pass
++It is important to include the pswrd-destroyer>>pass
++{"username":"ralph_Lghr", "userPassword":"thisIsMyP@$$w0rd1-Ha-Ha!", "dobMonthValue":"11", "birthYear":"1947","__comment": "user0"} >>fail
++this.password = function(password) >>pass
++<add name="Local" connectionString="Data Source=imsst026,1234;Initial Catalog=IMC_DOG_EVENT_LOG_Local;User Id=DOGEuser;Password=thisIsMyP@$$w0rd1;"/> >>fail
++<Value>Data Source=IMAST040,1234;User id=ASVState_18_IMC_USR;Password=thisIsMyP@$$w0rd1-Ha-Ha!;Initial Catalog=IMC_ATV_STATE_18_Local</Value> >>fail
++case "passwordEmail": >>pass
++case "Password": >>pass
++type="password" >>pass
++public string Password; >>pass
++this.login({ username: this.registerViewModel.user.username, password: this.registerViewModel.reenterPassword }); >>pass
++"password": "",>>pass
++"password": " ",>>pass
++"password": "a">>pass
++<Property Name="Password" Value="thisIsMyP@$$w0rd1"/> >>fail
++<password primary="thisIsMyP@$$w0rd1)"/> >>fail
++<Property Name="Password" Value="Nn%N12M3)o4P"/> >>fail
++import { MyaPasswordCreateComponent } from './mya-password-create.component'; >>pass
++"userPassword": "thisIsMyP@$$w0rd1-Ha-Ha!", >>fail
++"userPassword":"thisIsMyP@$$w0rd1-Ha-Ha!", >>fail
++<password primary="thisIsMyPw0rd1)"/> >>fail
++<password primary=${PASSWORD}/> >>pass
